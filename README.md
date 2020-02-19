@@ -31,6 +31,8 @@ npm install --save mysql
 
 ## 03. MySQL로 홈페이지 구현
 
+강의 출처: https://opentutorials.org/course/3347/21186
+
 1. main.js에 mysql 모듈 불러오기
 ```
 var mysql = require('mysql');
