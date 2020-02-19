@@ -1,6 +1,6 @@
 # Nodejs + MySQL
 
-## 01. 준비 사항
+## 01. 실습 준비
 
 강의 링크: https://opentutorials.org/course/3347/21175
 
