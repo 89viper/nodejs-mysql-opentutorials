@@ -13,7 +13,8 @@
 >pm2 log			//로그 표시
 ```
 2. 데이터베이스 세팅(MySQL 이용)
-
+```
 opentutorials 데이터베이스 내에<br/>
 author 테이블과 topic 테이블 생성<br/>
 각 테이블에 데이터를 추가
+```
