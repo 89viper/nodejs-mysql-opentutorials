@@ -8,4 +8,8 @@
 ```
 >npm install //필요한 모듈 다운로드
 ```
+```
+>pm2 start main.js --watch		//코드 변동사항 자동 적용
+>pm2 log			//로그 표시
+```
 2. 데이터베이스 세팅(MySQL 이용)
