@@ -28,3 +28,37 @@ author 테이블과 topic 테이블 생성
 npm install --save mysql
 ```
 2. mysql.js파일 생성 후 mysql 예제 붙여넣기
+
+## 03. MySQL로 홈페이지 구현
+
+1. main.js에 mysql 모듈 불러오기
+```
+var mysql = require('mysql');
+```
+
+2. mysql에 연결하기
+```
+var db = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: '...',
+    database: 'opentutorials'
+});
+
+db.connect();
+```
+
+3. 쿼리를 이용해서 테이블의 데이터 가져오기
+```
+db.query(`SELECT * FROM topic`, function (err, topics) {
+              var title = 'Welcome';
+              var description = 'Hello, Node.js';
+              var list = template.list(topics);
+              var html = template.HTML(title, list,
+              `<h2>${title}</h2>${description}`,
+              `<a href="/create">create</a>`
+              );
+              response.writeHead(200);
+              response.end(html);
+          });
+```
